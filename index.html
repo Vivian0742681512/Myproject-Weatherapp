@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <title>Myproject Weatherapp</title>
 </head>
+</div>
 <body>
+    <div class="weatherapp">
     <header>
-    <form>
-        <input type="search" placeholder="Enter your city..." required />
-        <input type="submit" value="search"/>
+    <form class="search-form">
+        <input type="search" placeholder="Enter your city..." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
     </form>
 </header>
 <main>
-    <div>
-    <h1>Nairobi</h1>
-    <p>Tuesday 06:11,No clouds
-    </br>
-    Humidity 66%  Wind 13.5 km/h   Precipitation 15%
-    </p>
-    </div>
-    <div>
-        🌞25 °C
-    </div>
+    <div class="weather-data">
+        <div>
+            <h1 class="weather-app-city">Nairobi</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
+        </div>
 </main>
     <footer> This site was coded by 
-        <a href="https://github.com/Vivian0742681512">Vivian Kariuki</a> 
+        <a href="https://github.com/Vivian0742681512">Vivian</a> 
        and 
        <a href="https://github.com/Vivian0742681512/Myproject-Weatherapp"> open-sourced on Github</a>
              and 
         <a href="https://veeweatherproject.netlify.app/">hosted on Netlify</a> 
         </footer>
+    </div>
 </body>
 </html>
