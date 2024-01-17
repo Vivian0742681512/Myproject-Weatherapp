@@ -80,7 +80,7 @@ footer
   .weather-app-temperature 
   {
     font-size: 88px;
-    margin-left: 10px;
+    margin-left: auto;
     font-weight: bold;
   }
   

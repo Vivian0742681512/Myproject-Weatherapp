@@ -13,15 +13,15 @@
 <body>
     <div class="weatherapp">
     <header>
-    <form class="search-form">
-        <input type="search" placeholder="Enter your city..." required class="search-form-input"/>
+    <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter your city..." required class="search-form-input" id="search-form-input"/>
         <input type="submit" value="search" class="search-form-button"/>
     </form>
 </header>
 <main>
     <div class="weather-data">
         <div>
-            <h1 class="weather-app-city">Nairobi</h1>
+            <h1 class="weather-app-city" id="city">Nairobi</h1>
             <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -43,5 +43,6 @@
         <a href="https://veeweatherproject.netlify.app/">hosted on Netlify</a> 
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
